@@ -8,8 +8,34 @@
   --footer-background: #2f303a;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 
 .list {
@@ -73,6 +99,32 @@ body {
 }
 
 /* ----------------------------------------header--------------------------------------- */
+.header {
+  padding-top: 28px;
+  padding-bottom: 21px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -84,6 +136,15 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-tel {
@@ -119,6 +180,8 @@ body {
 /* -------------------------------------------studio main---------------------------- */
 .section {
   background-color: #212121;
+  width: 1600px;
+  height: 600px;
 }
 .hero-title {
   font-weight: 900;
@@ -128,6 +191,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
+  padding: 200px 452px 280px 452px;
 }
 
 .btn {
