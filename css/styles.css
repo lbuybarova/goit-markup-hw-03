@@ -33,8 +33,6 @@ body {
 
 .container {
   width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin: 0 auto;
 }
 
@@ -180,7 +178,7 @@ body {
 /* -------------------------------------------studio main---------------------------- */
 .section {
   background-color: #212121;
-  width: 1600px;
+  width: auto;
   height: 600px;
 }
 .hero-title {
@@ -220,6 +218,10 @@ body {
   border-radius: 4px;
 }
 
+.reasons-list {
+  display: flex;
+}
+
 .reasons-item-title {
   font-size: 14px;
   line-height: 1.14;
@@ -243,6 +245,14 @@ body {
   color: var(--secondary-title-color);
 }
 
+.about-list {
+  display: flex;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .workers-title {
   font-size: 36px;
   line-height: 1.16;
@@ -251,6 +261,13 @@ body {
   color: var(--secondary-title-color);
 }
 
+.workers-list {
+  display: flex;
+}
+
+.workers-item:not(:last-child) {
+  margin-right: 30px;
+}
 .workers-item-title {
   font-weight: 500;
   font-size: 16px;
@@ -267,6 +284,10 @@ body {
 }
 
 /* ----------------------------------portfolio main----------------------- */
+.filters-list {
+  display: flex;
+}
+
 .filters-btn {
   font-family: inherit;
   font-weight: 500;
