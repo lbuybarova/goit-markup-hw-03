@@ -7,7 +7,6 @@
   --hero-backgrond: #2f303a;
   --footer-background: #2f303a;
 }
-
 p,
 h1,
 h2,
@@ -36,12 +35,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -108,6 +105,11 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -179,27 +181,26 @@ body {
 }
 
 /* -------------------------------------------studio main---------------------------- */
-.hero-section {
-  background-color: #212121;
-  width: 1200px;
-  height: 600px;
-}
-
-.section {
-  padding-top: 94px;
+.first-section {
   padding-bottom: 94px;
 }
 
-.hero-title {
+.hero-section {
+  background-color: #212121;
+  width: 1200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-section .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
-  width: 696px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .hero-btn {
@@ -207,23 +208,27 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 1px;
   min-width: 200px;
   display: block;
+  padding: 10px 32px;
   margin: 0 auto;
 }
 
-.btn:hover,
-.btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.second-section {
+  padding-bottom: 94px;
 }
 
 .reasons-list {
@@ -256,6 +261,10 @@ body {
   color: var(--primary-text-color);
 }
 
+.third-section {
+  padding-bottom: 94px;
+}
+
 .about-title {
   font-size: 36px;
   line-height: 1.16;
@@ -275,6 +284,11 @@ body {
 
 .about-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.fourth-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .workers-section {
@@ -329,6 +343,11 @@ body {
 }
 
 /* ----------------------------------portfolio main----------------------- */
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .filters-list {
   display: flex;
   margin-bottom: 34px;
@@ -344,11 +363,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
   margin-right: 8px;
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  border-color: #f5f4fa;
+  border: 1px;
+  border-radius: 4px;
 }
-
-/* .filters-btn:not(:last-child) {
-  margin-right: 8px;
-} */
 
 .filters-btn:hover,
 .filters-btn:focus {
@@ -360,6 +380,8 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-examples-list {
@@ -373,11 +395,11 @@ body {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .work-examples-description {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .work-examples-title {
