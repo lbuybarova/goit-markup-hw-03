@@ -21,6 +21,11 @@ h6 {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
 }
 
 button {
@@ -31,13 +36,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
-}
-
-.list {
-  list-style: none;
 }
 
 .link {
@@ -100,11 +105,10 @@ body {
 .header {
   padding-top: 28px;
   padding-bottom: 21px;
-}
-
-.header-container {
+  border-bottom: auto;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -176,11 +180,18 @@ body {
 }
 
 /* -------------------------------------------studio main---------------------------- */
-.section {
+.hero-section {
   background-color: #212121;
-  width: auto;
+  width: 1200px;
   height: 600px;
+  margin-top: 36px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -189,7 +200,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
-  padding: 200px 452px 280px 452px;
 }
 
 .btn {
@@ -220,6 +230,16 @@ body {
 
 .reasons-list {
   display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.reasons-item {
+  width: 270px;
+}
+
+.reasons-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .reasons-item-title {
@@ -228,6 +248,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 .reasons-item-text {
@@ -247,6 +268,11 @@ body {
 
 .about-list {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.about-list-item {
+  margin-top: 50px;
 }
 
 .about-list-item:not(:last-child) {
@@ -263,17 +289,27 @@ body {
 
 .workers-list {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .workers-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.workers-item-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .workers-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 .workers-item-text {
@@ -286,6 +322,8 @@ body {
 /* ----------------------------------portfolio main----------------------- */
 .filters-list {
   display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
 }
 
 .filters-btn {
@@ -296,7 +334,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  margin-right: 8px;
 }
+
+/* .filters-btn:not(:last-child) {
+  margin-right: 8px;
+} */
 
 .filters-btn:hover,
 .filters-btn:focus {
@@ -310,14 +353,30 @@ body {
   background-color: var(--accent-color);
 }
 
-.pointer {
-  cursor: pointer;
+.work-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
+
+.work-examples-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.work-examples-description {
+  padding: 20px 24px;
+}
+
 .work-examples-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
+  margin-bottom: 4px;
 }
 
 .work-examples-text {
@@ -330,6 +389,12 @@ body {
 
 .footer {
   background-color: var(--hero-backgrond);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 
 .footer-mail {
@@ -356,6 +421,14 @@ body {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+
+.contacts-adress {
+  margin-bottom: 9px;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address {
